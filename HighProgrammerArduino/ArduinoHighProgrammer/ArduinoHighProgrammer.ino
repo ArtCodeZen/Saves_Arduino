@@ -9,12 +9,16 @@
  */
 
 // Desired fuse configuration original programmer
-// #define  HFUSE  0xDF   // Default for ATmega48/88/168, for others see
-// #define  LFUSE  0x62   // http://www.engbedded.com/cgi-bin/fc.cgi
+//#define  HFUSE  0xDF   // Default for ATmega48/88/168, for others see
+//#define  LFUSE  0x62   // http://www.engbedded.com/cgi-bin/fc.cgi
 
+// arduino ide for atmega88 bootloader burn
+// #define HFUSE 0xD5
+// #define LFUSE 0xF7
 
 #define HFUSE 0xDF
 #define LFUSE 0xFF
+
 
 // Pin Assignments
 #define  DATA    PORTD // PORTD = Arduino Digital pins 0-7
