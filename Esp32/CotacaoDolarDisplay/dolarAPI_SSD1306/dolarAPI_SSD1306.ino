@@ -62,7 +62,7 @@ void loop() {
 
     HTTPClient http;
 
-    http.begin("http://jsonplaceholder.typicode.com/comments?id=10");  //Specify the URL
+    http.begin("https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarDia(dataCotacao=@dataCotacao)?@dataCotacao=%2712-18-2024%27&$top=100&$format=json&$select=cotacaoVenda");  //Specify the URL
     int httpCode = http.GET();                                         //Make the request
 
     if (httpCode > 0) {  //Check for the returning code
